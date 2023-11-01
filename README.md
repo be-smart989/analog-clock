@@ -2,6 +2,10 @@
 
 In the project directory, you can run:
 
+### `yarn`
+
+Download node_modules automatically for the project.
+
 ### `yarn start`
 
 Runs the app in the development mode.\

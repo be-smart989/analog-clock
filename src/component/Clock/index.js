@@ -11,7 +11,7 @@ const Clock = () => {
   useEffect(() => {
     setInterval(() => {
       setCurrentTime(new Date());
-    }, 1000);
+    }, 100);
   });
 
   const getCursor = (event) => {
@@ -61,7 +61,7 @@ const Clock = () => {
           <div
             className="hand second"
             style={{
-              transform: `rotateZ(${currentTime.getSeconds() * 6}deg)`,
+              transform: `rotateZ(${currentTime.getSeconds() * 6 + currentTime.getMilliseconds() * 6 / 1000}deg)`,
             }}
           ></div>
 
